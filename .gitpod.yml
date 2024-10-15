@@ -5,6 +5,6 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - init: wget "https://github.com/ZyCromerZ/Clang/releases/download/20.0.0git-20241014-release/Clang-20.0.0git-20241014.tar.gz" && tar -xvzf 20.0.0git-20241014-release/Clang-20.0.0git-20241014.tar.gz -C $HOME/tc/Clang-20.0.0 && apt install flex && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+  - init: wget "https://github.com/ZyCromerZ/Clang/releases/download/20.0.0git-20241014-release/Clang-20.0.0git-20241014.tar.gz" && mkdir $HOME/tc && mkdir $HOME/tc/Clang-20.0.0 && tar -xvzf Clang-20.0.0git-20241014.tar.gz -C $HOME/tc/Clang-20.0.0 && sudo apt install flex && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
 
 
